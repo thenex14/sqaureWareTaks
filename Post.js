@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, StyleSheet, Image, TextInput, SliderComponent, Button, TouchableOpacity } from "react-native";
 import Slider from '@react-native-community/slider'
 
 const Post = () => {
+    const [sliderValue, setSliderValue] = useState(35)
+
     return (
         <View style={styles.topContainer}>
             <View style={styles.topButtons}>
@@ -25,8 +27,22 @@ const Post = () => {
             <View>
                 <Text style={styles.cookingMainText}>Cooking Duration <Text style={styles.cookingSubText}>(in minutes)</Text></Text>
             </View>
+            <View style={styles.threeComponents}>
+                <Text style={styles.yellowText}>{'<10'}</Text>
+                <Text style={styles.yellowText}>{sliderValue}</Text>
+                <Text style={styles.greyText}>{'>60'}</Text>
+            </View>
             <View>
-                <Text>Slider</Text>
+                <Slider
+                    maximumValue={60}
+                    minimumValue={10}
+                    minimumTrackTintColor="#FFF395"
+                    maximumTrackTintColor="#9FA5C0"
+                    thumbTintColor="#FFF395"
+                    step={1}
+                    value={sliderValue}
+                    onValueChange={(sliderValue) => setSliderValue(sliderValue)}
+                />
             </View>
             <View >
                 <TouchableOpacity style={styles.button}>
@@ -41,7 +57,7 @@ const Post = () => {
 
 const styles = StyleSheet.create({
     topContainer: {
-        flex: 1,   
+        flex: 1,
         alignItems: 'space-between',
         marginLeft: 100 / 2,
         marginRight: 100 / 2,
@@ -125,6 +141,21 @@ const styles = StyleSheet.create({
     cookingSubText: {
         color: 'grey',
         fontWeight: 500
+    },
+    threeComponents: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingBottom: 10
+    },
+
+    yellowText: {
+        color: '#FFF395',
+        fontWeight: 700
+    },
+
+    greyText: {
+        color: '#9FA5C0',
+        fontWeight: 700
     },
 
     button: {
