@@ -41,7 +41,7 @@ const Post = () => {
 
 const styles = StyleSheet.create({
     topContainer: {
-        flex: 1,    //Whats this
+        flex: 1,   
         alignItems: 'space-between',
         marginLeft: 100 / 2,
         marginRight: 100 / 2,
