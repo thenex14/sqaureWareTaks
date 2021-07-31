@@ -91,7 +91,6 @@ const styles = StyleSheet.create({
         color: '#3E5481', // Dark Shade
         fontWeight: 700,
         lineHeight: 25,
-        fontWeight: 'bold'
     },
 
     coverPhotoBoxLightText: {

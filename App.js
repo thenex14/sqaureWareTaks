@@ -3,12 +3,14 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Header from './Header';
 import Post from './Post'
+import Home from './Home'
 
 
 const App = () => {
     return (
         <View style={styles.container}>
-            <Post />
+            {/* <Post /> */}
+            <Home />
         </View>
     );
 }
