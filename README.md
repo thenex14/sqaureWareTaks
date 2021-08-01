@@ -26,7 +26,7 @@ I have used two external packages for the project ,
 2. expo Camera in Pic.js
 
 The product pages remain static for the most part , however , slider component and camera API are fully functional.
-All the buttons were build mostly using the <TouchabaleOPacity/> Component.
+All the buttons were build mostly using the TouchabaleOPacity Component.
 All the three cards has been configured with respect to web simulator of expo.
 
 
