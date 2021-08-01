@@ -1,4 +1,4 @@
-# Sqaure wave Assignment 
+# theSqaureWare Assignment 
 
 ### Getting  Started
 1. Download the code and extract to a folder, 
