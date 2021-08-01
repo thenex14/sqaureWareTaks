@@ -9,7 +9,7 @@ const Post = () => {
         <View style={styles.topContainer}>
             <View style={styles.topButtons}>
                 <TouchableOpacity> <Text style={styles.cancelButtonText}>Cancel</Text></TouchableOpacity>
-                <Text>1/2</Text>
+                <Text style={styles.lightSubText}><Text style={styles.darkSubText}>1</Text>/2</Text>
             </View>
             <View style={styles.coverPhotoBox}>
                 <Image style={styles.image} source={require('./assets/Icons/icon.png')} />
@@ -70,9 +70,26 @@ const styles = StyleSheet.create({
 
     },
     cancelButtonText: {
-        color: 'red',
-        fontWeight: 700
+        color: '#FF6464',
+        fontWeight: 700,
+        fontSize: 17,
+        lineHeight: 27
     },
+
+    lightSubText: {
+        color: '#9FA5C0',
+        fontWeight: 700,
+        fontSize: 17,
+        lineHeight: 27,
+    },
+
+    darkSubText: {
+        color: '#3E5481',
+        fontWeight: 700,
+        fontSize: 17,
+        lineHeight: 27
+    },
+
     coverPhotoBox: {
         alignItems: 'center',
         borderWidth: 2,
@@ -91,6 +108,8 @@ const styles = StyleSheet.create({
         color: '#3E5481', // Dark Shade
         fontWeight: 700,
         lineHeight: 25,
+        fontSize: 15,
+
     },
 
     coverPhotoBoxLightText: {
@@ -102,6 +121,8 @@ const styles = StyleSheet.create({
     recipeText: {
         color: '#3E5481',
         fontWeight: 700,
+        lineHeight: 27,
+        fontSize: 17,
         paddingTop: 10,
         paddingBottom: 10
     },
@@ -117,7 +138,9 @@ const styles = StyleSheet.create({
         color: '#3E5481',
         fontWeight: 700,
         paddingTop: 10,
-        paddingBottom: 10
+        paddingBottom: 10,
+        lineHeight: 27,
+        fontSize: 17,
     },
 
     descriptionTextInput: {
@@ -134,7 +157,9 @@ const styles = StyleSheet.create({
         color: '#3E5481',
         fontWeight: 700,
         paddingTop: 10,
-        paddingBottom: 10
+        paddingBottom: 10,
+        lineHeight: 27,
+        fontSize: 17,
     },
 
     cookingSubText: {

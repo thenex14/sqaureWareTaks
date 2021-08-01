@@ -1,16 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Header from './Header';
 import Post from './Post'
 import Home from './Home'
-
+import Pic from './Pic'
 
 const App = () => {
     return (
         <View style={styles.container}>
-            {/* <Post /> */}
             <Home />
+            <Post />
+            <Pic />
         </View>
     );
 }
