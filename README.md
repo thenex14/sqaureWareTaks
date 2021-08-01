@@ -10,7 +10,7 @@
  
  The project can be run on iOS simulator or Android simulator or in a web simulator
 
-Here we will discuss about the setting up expo.
+To run the project we need to have expo installed on our system.
 ### Installing Expo. 
 [Read here](https://docs.expo.dev/get-started/installation/)
 
